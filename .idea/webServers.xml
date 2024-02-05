@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0a40c3be-7921-4910-ba40-4657e3292ff7" name="rbtree">
+        <fileTransfer rootFolder="/home/ubuntu" accessType="SFTP" host="15.164.224.71" port="22" sshConfigId="5928d080-b877-4834-b841-83fe9be9b8cf" sshConfig="ubuntu@15.164.224.71:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
