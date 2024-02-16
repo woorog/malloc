@@ -1,24 +1,24 @@
 #include "rbtree.h"
 
 #include <stdlib.h>
-// [MOD] debugging purposes
-// #include <stdio.h>
-// #include <string.h>
+ [MOD] debugging purposes
+ #include <stdio.h>
+ #include <string.h>
 
-// void delete_node(rbtree *t, node_t *curr);
-// void rotate_left(rbtree *t, node_t *curr);
-// void rotate_right(rbtree *t, node_t *curr);
-// void insert_fix(rbtree *t, node_t *curr);
-// void transplant(rbtree *t, node_t *node_del, node_t *node_sub);
-// void erase_fix(rbtree *t, node_t *curr);
-// void inorder_trav(const rbtree *t, key_t *arr, const size_t n, node_t *node, int *count);
+ void delete_node(rbtree *t, node_t *curr);
+ void rotate_left(rbtree *t, node_t *curr);
+ void rotate_right(rbtree *t, node_t *curr);
+ void insert_fix(rbtree *t, node_t *curr);
+ void transplant(rbtree *t, node_t *node_del, node_t *node_sub);
+ void erase_fix(rbtree *t, node_t *curr);
+ void inorder_trav(const rbtree *t, key_t *arr, const size_t n, node_t *node, int *count);
 
-// node_t *rbtree_insert(rbtree *, const key_t);
-// node_t *rbtree_find(const rbtree *, const key_t);
-// node_t *rbtree_min(const rbtree *);
-// node_t *rbtree_max(const rbtree *);
-// int rbtree_erase(rbtree *, node_t *);
-// int rbtree_to_array(const rbtree *, key_t *, const size_t);
+ node_t *rbtree_insert(rbtree *, const key_t);
+ node_t *rbtree_find(const rbtree *, const key_t);
+ node_t *rbtree_min(const rbtree *);
+ node_t *rbtree_max(const rbtree *);
+ int rbtree_erase(rbtree *, node_t *);
+ int rbtree_to_array(const rbtree *, key_t *, const size_t);
 
 rbtree *new_rbtree(void) {
   rbtree *t = (rbtree *)calloc(1, sizeof(rbtree));
